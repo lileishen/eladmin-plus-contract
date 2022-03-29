@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yntovi.service.mapper.ContractMapper">
+
+  <!-- 通用查询结果列 -->
+  <!--
+  <sql id="Base_Column_List">
+      a.contract_id, a.name, a.no, a.party_a, a.charge_a, a.party_b, a.charge_b, a.type, a.dept, a.rec_pay, a.amount, a.status, a.sign_time, a.effect_time, a.end_time, a.key_terms, a.comment, a.sort, a.top, a.deleted, a.version, a.create_by, a.create_dept_by, a.update_by, a.create_time, a.update_time
+  </sql>
+  -->
+</mapper>

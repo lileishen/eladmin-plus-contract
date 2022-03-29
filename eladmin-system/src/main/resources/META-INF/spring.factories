@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.yntovi.config.MybatisPlusFillHandler,\
+    com.yntovi.config.MybatisPlusConfig

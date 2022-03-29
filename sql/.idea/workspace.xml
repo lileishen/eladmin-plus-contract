@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c91a7289-8aec-4b87-93b2-11b82d268c98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/AnonymousAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/DataPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/Limit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/rest/AnonymousDeleteMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/rest/AnonymousGetMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/rest/AnonymousPatchMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/rest/AnonymousPostMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/annotation/rest/AnonymousPutMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/aspect/LimitAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/aspect/LimitType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/CommonDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/CommonEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/CommonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/CommonModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/CommonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/QueryHelpMybatisPlus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/base/impl/CommonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/AuditorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/ElPermissionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/FileProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/MybatisPlusFillHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/RsaProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/exception/BadConfigurationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/exception/EntityExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/exception/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/exception/handler/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/exception/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/BeanCopyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/CacheKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/CallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/CloseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/CompareUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/ConvertUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/ElAdminConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/EncryptUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/MyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/PageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/RequestHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/RsaUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/SpringContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/ThrowableUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/TranslatorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/ValidationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/enums/CodeBiEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/enums/CodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/enums/DataScopeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/enums/MenuType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-common/src/main/java/com/yntovi/utils/enums/RequestMethodEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-contract/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/domain/CodeScrewConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/domain/ColumnInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/domain/GenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/domain/vo/TableInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/rest/CodeScrewConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/rest/GenConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/rest/GeneratorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/CodeScrewConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/GenConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/GeneratorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/dto/CodeScrewConfigDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/dto/CodeScrewConfigQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/impl/CodeScrewConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/impl/GenConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/impl/GeneratorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/mapper/CodeScrewConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/mapper/ColumnInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/service/mapper/GenConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/utils/ColUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/java/com/yntovi/utils/GenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/domain/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/rest/LogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/service/LogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/service/dto/LogErrorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/service/dto/LogQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/service/dto/LogSmallDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/service/impl/LogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/java/com/yntovi/service/mapper/LogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/AppRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/config/ConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/config/thread/AsyncTaskExecutePool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/config/thread/AsyncTaskProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/config/thread/TheadFactoryName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/config/thread/ThreadPoolExecutorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/domain/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/domain/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/domain/Deploy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/domain/DeployHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/domain/DeploysServers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/domain/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/mapper/AppMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/mapper/DatabaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/mapper/DeployHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/mapper/DeployMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/mapper/DeploysServersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/mapper/ServerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/rest/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/rest/DatabaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/rest/DeployController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/rest/DeployHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/rest/ServerDeployController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/AppService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/DatabaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/DeployHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/DeployService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/DeploysServersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/ServerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/AppDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/AppQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/DatabaseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/DatabaseQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/DeployDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/DeployHistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/DeployHistoryQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/DeployQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/ServerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/dto/ServerQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/impl/AppServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/impl/DatabaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/impl/DeployHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/impl/DeployServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/impl/DeploysServersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/service/impl/ServerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/util/DataTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/util/ExecuteShellUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/util/ScpClientUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/util/SqlUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/util/ZipUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/websocket/MsgType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/websocket/SocketMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/mnt/websocket/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/config/JobRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/config/QuartzConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/domain/QuartzJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/domain/QuartzLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/rest/QuartzJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/service/QuartzJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/service/dto/QuartzJobQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/service/dto/QuartzLogQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/service/impl/QuartzJobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/service/mapper/QuartzJobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/service/mapper/QuartzLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/task/TestTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/utils/ExecutionJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/utils/QuartzManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/quartz/utils/QuartzRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/config/ConfigBeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/config/bean/LoginCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/config/bean/LoginCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/config/bean/LoginProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/config/bean/SecurityProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/rest/AuthorizationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/rest/OnlineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/security/JwtAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/security/TokenConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/security/TokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/security/TokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/service/OnlineUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/service/UserCacheClean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/service/dto/AuthUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/service/dto/JwtUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/security/service/dto/OnlineUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/Dict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/DictDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/RolesDepts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/RolesMenus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/UsersJobs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/UsersRoles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/vo/MenuMetaVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/vo/MenuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/domain/vo/UserPassVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/DictController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/DictDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/JobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/LimitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/MonitorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/rest/VerifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/DataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/DictDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/DictService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/JobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/MonitorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/RolesDeptsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/RolesMenusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/UsersJobsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/UsersRolesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/VerifyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DeptDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DeptQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DeptSmallDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DictDetailDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DictDetailQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DictDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DictQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/DictSmallDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/JobDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/JobQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/JobSmallDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/MenuDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/MenuQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/RoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/RoleQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/RoleSmallDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/dto/UserQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/DataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/DictDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/DictServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/JobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/MonitorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/RolesDeptsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/RolesMenusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/UsersJobsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/UsersRolesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/impl/VerifyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/DictDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/DictMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/JobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/RolesDeptsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/RolesMenusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/UsersJobsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/system/service/mapper/UsersRolesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/test/domain/Table1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/test/rest/Table1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/test/service/Table1Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/test/service/dto/Table1Dto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/test/service/dto/Table1QueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/test/service/impl/Table1ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-system/src/main/java/com/yntovi/modules/test/service/mapper/Table1Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/config/MultipartConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/AlipayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/EmailConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/LocalStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/QiniuConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/QiniuContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/WeixinConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/vo/EmailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/domain/vo/TradeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/rest/AliPayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/rest/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/rest/LocalStorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/rest/QiniuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/rest/WeixinConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/AliPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/LocalStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/QiNiuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/WeixinConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/AlipayConfigDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/AlipayConfigQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/EmailConfigDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/EmailConfigQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/LocalStorageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/LocalStorageQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/QiniuConfigDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/QiniuConfigQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/QiniuContentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/QiniuContentQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/WeixinConfigDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/dto/WeixinConfigQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/impl/EmailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/impl/LocalStorageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/impl/QiNiuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/impl/WeixinConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/mapper/AlipayConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/mapper/EmailConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/mapper/LocalStorageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/mapper/QiniuConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/mapper/QiniuContentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/service/mapper/WeixinConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/config/AliyunOssConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/config/BaiduBosConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/config/MinioConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/config/QiniuKodoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/config/TencentCosConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/service/AliyunOssStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/service/BaiduBosStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/service/CloudStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/service/MinioStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/service/QiniuKodoStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/cloud/service/TencentCosStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/fastdfs/FastdfsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/fastdfs/bean/FastDFSFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/fastdfs/bean/FastDFSUploadResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/fastdfs/client/FastDFSClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/fastdfs/client/FastDFSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/fastdfs/exception/ERRORS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/fastdfs/exception/FastDFSException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/ftp/FtpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/sftp/JschService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/sftp/bean/JschUploadResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/sftp/client/SSH2Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/storage/sftp/client/SSH2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/utils/AliPayStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/utils/AlipayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/utils/QiNiuUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/java/com/yntovi/utils/WeixinToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/WeixinConfigMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-ui/src/api/tools/weixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-ui/src/views/tools/weixin/config.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eladmin-ui/src/views/tools/weixin/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cm.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weixin.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/AnonymousAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/DataPermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/Limit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/Scene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/rest/AnonymousDeleteMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/rest/AnonymousGetMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/rest/AnonymousPatchMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/rest/AnonymousPostMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/annotation/rest/AnonymousPutMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/aspect/LimitAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/aspect/LimitType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/CommonDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/CommonEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/CommonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/CommonModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/CommonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/PageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/QueryHelpMybatisPlus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/base/impl/CommonServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/AuditorConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/ElPermissionConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/FileProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/MybatisPlusConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/MybatisPlusFillHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/RsaProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/exception/BadConfigurationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/exception/BadRequestException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/exception/EntityExistException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/exception/EntityNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/exception/handler/ApiError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/exception/handler/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/BeanCopyUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/CacheKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/CallBack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/CloseUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/CompareUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/ConvertUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/DateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/ElAdminConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/EncryptUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/MyUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/PageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/RedisUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/RequestHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/RsaUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/SecurityUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/SpringContextHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/ThrowableUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/TranslatorUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/ValidationUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/enums/CodeBiEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/enums/CodeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/enums/DataScopeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/enums/MenuType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/main/java/me/zhengjie/utils/enums/RequestMethodEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/test/java/me/zhengjie/utils/DateUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-common/src/test/java/com/yntovi/utils/DateUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/test/java/me/zhengjie/utils/EncryptUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-common/src/test/java/com/yntovi/utils/EncryptUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/test/java/me/zhengjie/utils/FileUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-common/src/test/java/com/yntovi/utils/FileUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-common/src/test/java/me/zhengjie/utils/StringUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-common/src/test/java/com/yntovi/utils/StringUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-generator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/domain/CodeScrewConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/domain/ColumnInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/domain/GenConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/domain/vo/TableInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/rest/CodeScrewConfigController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/rest/GenConfigController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/rest/GeneratorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/CodeScrewConfigService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/GenConfigService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/GeneratorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/dto/CodeScrewConfigDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/dto/CodeScrewConfigQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/impl/CodeScrewConfigServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/impl/GenConfigServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/impl/GeneratorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/mapper/CodeScrewConfigMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/mapper/ColumnInfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/service/mapper/GenConfigMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/utils/ColUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/java/me/zhengjie/utils/GenUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/resources/mapper/CodeScrewConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/resources/mapper/CodeScrewConfigMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-generator/src/main/resources/mapper/ColumnInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-generator/src/main/resources/mapper/ColumnInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-logging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/annotation/Log.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/aspect/LogAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/domain/Log.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/rest/LogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/service/LogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/service/dto/LogErrorDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/service/dto/LogQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/service/dto/LogSmallDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/service/impl/LogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/java/me/zhengjie/service/mapper/LogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-logging/src/main/resources/mapper/LogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-logging/src/main/resources/mapper/LogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/AppRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/config/ConfigurerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/config/WebSocketConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/config/thread/AsyncTaskExecutePool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/config/thread/AsyncTaskProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/config/thread/TheadFactoryName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/config/thread/ThreadPoolExecutorUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/domain/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/domain/Database.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/domain/Deploy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/domain/DeployHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/domain/DeploysServers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/domain/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/mapper/AppMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/mapper/DatabaseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/mapper/DeployHistoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/mapper/DeployMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/mapper/DeploysServersMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/mapper/ServerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/rest/AppController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/rest/DatabaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/rest/DeployController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/rest/DeployHistoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/rest/ServerDeployController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/AppService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/DatabaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/DeployHistoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/DeployService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/DeploysServersService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/ServerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/AppDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/AppQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/DatabaseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/DatabaseQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/DeployDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/DeployHistoryDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/DeployHistoryQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/DeployQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/ServerDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/dto/ServerQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/impl/AppServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/impl/DatabaseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/impl/DeployHistoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/impl/DeployServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/impl/DeploysServersServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/service/impl/ServerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/util/DataTypeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/util/ExecuteShellUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/util/ScpClientUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/util/SqlUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/util/ZipUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/websocket/MsgType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/websocket/SocketMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/mnt/websocket/WebSocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/config/JobRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/config/QuartzConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/domain/QuartzJob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/domain/QuartzLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/rest/QuartzJobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/service/QuartzJobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/service/dto/QuartzJobQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/service/dto/QuartzLogQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/service/impl/QuartzJobServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/service/mapper/QuartzJobMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/service/mapper/QuartzLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/task/TestTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/utils/ExecutionJob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/utils/QuartzManage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/quartz/utils/QuartzRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/config/ConfigBeanConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/config/bean/LoginCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/config/bean/LoginCodeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/config/bean/LoginProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/config/bean/SecurityProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/rest/AuthorizationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/rest/OnlineController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/security/JwtAccessDeniedHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/security/JwtAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/security/TokenConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/security/TokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/security/TokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/service/OnlineUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/service/UserCacheClean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/service/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/service/dto/AuthUserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/service/dto/JwtUserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/security/service/dto/OnlineUserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/Dept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/Dict.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/DictDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/Job.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/RolesDepts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/RolesMenus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/UsersJobs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/UsersRoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/vo/MenuMetaVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/vo/MenuVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/domain/vo/UserPassVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/DeptController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/DictController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/DictDetailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/JobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/LimitController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/MonitorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/rest/VerifyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/DataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/DeptService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/DictDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/DictService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/JobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/MenuService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/MonitorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/RoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/RolesDeptsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/RolesMenusService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/UsersJobsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/UsersRolesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/VerifyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DeptDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DeptQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DeptSmallDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DictDetailDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DictDetailQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DictDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DictQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/DictSmallDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/JobDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/JobQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/JobSmallDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/MenuDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/MenuQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/RoleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/RoleQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/RoleSmallDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/dto/UserQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/DataServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/DeptServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/DictDetailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/DictServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/JobServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/MenuServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/MonitorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/RoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/RolesDeptsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/RolesMenusServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/UsersJobsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/UsersRolesServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/impl/VerifyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/DeptMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/DictDetailMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/DictMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/JobMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/MenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/RolesDeptsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/RolesMenusMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/UsersJobsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/system/service/mapper/UsersRolesMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/test/domain/Table1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/test/rest/Table1Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/test/service/Table1Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/test/service/dto/Table1Dto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/test/service/dto/Table1QueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/test/service/impl/Table1ServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/java/me/zhengjie/modules/test/service/mapper/Table1Mapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/config/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/config/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/AppMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/AppMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DatabaseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DatabaseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DeployHistoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DeployHistoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DeployMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DeployMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DictDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DictDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DictMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/DictMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/QuartzJobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/QuartzJobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/QuartzLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/QuartzLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/ServerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/ServerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/Table1Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/Table1Mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Controller.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Controller.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Entity.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Entity.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Mapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Mapper.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/QueryParam.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/QueryParam.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Service.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/Service.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/ServiceImpl.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/main/resources/template/generator/eladmin/ServiceImpl.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/test/java/me/zhengjie/EladminSystemApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/test/java/com/yntovi/EladminSystemApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-system/src/test/java/me/zhengjie/LoginCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-system/src/test/java/com/yntovi/LoginCacheTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-tools/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/config/MultipartConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/domain/AlipayConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/domain/EmailConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/domain/LocalStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/domain/QiniuConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/domain/QiniuContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/domain/vo/EmailVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/domain/vo/TradeVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/rest/AliPayController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/rest/EmailController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/rest/LocalStorageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/rest/QiniuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/AliPayService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/EmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/LocalStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/QiNiuService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/AlipayConfigDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/AlipayConfigQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/EmailConfigDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/EmailConfigQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/LocalStorageDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/LocalStorageQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/QiniuConfigDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/QiniuConfigQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/QiniuContentDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/dto/QiniuContentQueryParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/impl/AliPayServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/impl/EmailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/impl/LocalStorageServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/impl/QiNiuServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/mapper/AlipayConfigMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/mapper/EmailConfigMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/mapper/LocalStorageMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/mapper/QiniuConfigMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/service/mapper/QiniuContentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/config/AliyunOssConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/config/BaiduBosConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/config/MinioConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/config/QiniuKodoConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/config/TencentCosConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/service/AliyunOssStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/service/BaiduBosStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/service/CloudStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/service/MinioStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/service/QiniuKodoStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/cloud/service/TencentCosStorageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/fastdfs/FastdfsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/fastdfs/bean/FastDFSFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/fastdfs/bean/FastDFSUploadResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/fastdfs/client/FastDFSClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/fastdfs/client/FastDFSConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/fastdfs/exception/ERRORS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/fastdfs/exception/FastDFSException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/ftp/FtpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/sftp/JschService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/sftp/bean/JschUploadResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/sftp/client/SSH2Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/storage/sftp/client/SSH2Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/utils/AliPayStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/utils/AlipayUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/java/me/zhengjie/utils/QiNiuUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/AlipayConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/AlipayConfigMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/EmailConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/EmailConfigMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/LocalStorageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/LocalStorageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/QiniuConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/QiniuConfigMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/QiniuContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-tools/src/main/resources/mapper/QiniuContentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-ui/src/components/Breadcrumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-ui/src/components/Breadcrumb/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-ui/src/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-ui/src/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-ui/src/layout/components/TagsView/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-ui/src/layout/components/TagsView/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-ui/src/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-ui/src/layout/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-ui/src/router/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-ui/src/router/routers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-ui/src/store/modules/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-ui/src/store/modules/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eladmin-ui/src/views/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../eladmin-ui/src/views/home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/V20210811_数据库文档生成_脚本.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eladmin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/eladmin.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/脚本如何选择.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\DevelopTools\MavenRepository" />
+        <option name="mavenHome" value="E:\Program Files\JetBrains\IntelliJ IDEA 2020.2.4\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="D:\DevelopTools\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="23Gi9P3jlLC7zt3yiMceO1lOyJN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2">
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c91a7289-8aec-4b87-93b2-11b82d268c98" name="Default Changelist" comment="" />
+      <created>1641366671815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641366671815</updated>
+      <workItem from="1641366672897" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+</project>

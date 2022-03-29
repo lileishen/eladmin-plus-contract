@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yntovi.service.mapper.FileMapper">
+
+    <!-- 通用查询结果列 -->
+    <!--
+    <sql id="Base_Column_List">
+        a.file_id, a.id, a.deleted, a.version, a.create_by, a.create_dept_by, a.update_by, a.create_time, a.update_time, a.storage_id
+    </sql>
+    -->
+
+    <resultMap id="fileMap" type="com.yntovi.domain.File">
+        <id property="fileId" column="file_id"/>
+        <result property="relationId" column="relation_id"/>
+        <result property="storageId" column="storage_id"/>
+        <result property="deleted" column="deleted"/>
+        <result property="version" column="version"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createDeptBy" column="create_dept_by"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <resultMap id="fileMap2" extends="fileMap" type="com.yntovi.domain.File">
+    		
+    	</resultMap>
+
+
+    <select id="listFileByrelationId" resultType="com.yntovi.domain.LocalStorage">
+        select
+        storage_id  id,
+        real_name,
+        name,
+        suffix,
+        path,
+        type,
+        size,
+        create_by,
+        update_by,
+        create_time,
+        update_time
+        from tool_local_storage
+        where storage_id in
+        (select storage_id from cm_file where deleted=0 and relation_id=#{relationId})
+    </select>
+
+</mapper>

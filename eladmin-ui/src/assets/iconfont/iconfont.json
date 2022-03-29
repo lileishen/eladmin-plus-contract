@@ -1,0 +1,37 @@
+{
+  "id": "3151463",
+  "name": "kf-cm",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "22032561",
+      "name": "企业微信",
+      "font_class": "qiyeweixin",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "18368062",
+      "name": "企业微信01",
+      "font_class": "qiyeweixin01",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "1165713",
+      "name": "协作",
+      "font_class": "renren",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "12683585",
+      "name": "多人协作",
+      "font_class": "icon_duorenxiezuo",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}

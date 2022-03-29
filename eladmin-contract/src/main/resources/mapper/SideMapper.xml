@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yntovi.service.mapper.SideMapper">
+
+    <!-- 通用查询结果列 -->
+    <!--
+    <sql id="Base_Column_List">
+        a.side_id, a.name, a.no, a.type, a.con_per, a.con_tel, a.bank, a.bank_acc, a.address, a.addr_detail, a.comment, a.enabled, a.deleted, a.version, a.create_by, a.create_dept_by, a.update_by, a.create_time, a.update_time
+    </sql>
+    -->
+
+    <resultMap id="sideMap" type="com.yntovi.domain.Side">
+        <id property="sideId" column="side_id"/>
+        <result property="name" column="name"/>
+        <result property="no" column="no"/>
+        <result property="type" column="type"/>
+        <result property="conPer" column="con_per"/>
+        <result property="conTel" column="con_tel"/>
+        <result property="bank" column="bank"/>
+        <result property="bankAcc" column="bank_acc"/>
+        <result property="address" column="address" jdbcType="VARCHAR" typeHandler="com.yntovi.typehandler.ArrayStringTypeHandler"/>
+        <result property="addrDetail" column="addr_detail"/>
+        <result property="comment" column="comment"/>
+        <result property="enabled" column="enabled"/>
+        <result property="deleted" column="deleted"/>
+        <result property="version" column="version"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createDeptBy" column="create_dept_by"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="typeVal" column="type_val"/>
+    </resultMap>
+
+    <resultMap id="sideMap1" extends="sideMap" type="com.yntovi.domain.Side">
+        <collection property="files" ofType="com.yntovi.domain.LocalStorage"
+                    select="com.yntovi.service.mapper.FileMapper.listFileByrelationId"
+                    column="{relationId=side_id}">
+        </collection>
+    </resultMap>
+
+    <sql id="sideSql">
+        side_id,
+        name,
+        no,
+        type,
+        (select label from sys_dict_detail where detail_id = type) type_val,
+        con_per,
+        con_tel,
+        bank,
+        bank_acc,
+        address,
+        addr_detail,
+        `comment`,
+        enabled,
+        deleted,
+        version,
+        create_by,
+        create_dept_by,
+        update_by,
+        create_time,
+        update_time
+    </sql>
+
+    <select id="selectPage1" resultMap="sideMap1">
+        SELECT
+        <include refid="sideSql"/>
+        FROM cm_side  ${ew.customSqlSegment}
+    </select>
+    <select id="selectList1" resultMap="sideMap">
+        SELECT
+        <include refid="sideSql"/>
+        FROM cm_side  ${ew.customSqlSegment}
+    </select>
+
+</mapper>
